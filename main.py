@@ -35,5 +35,5 @@ while (flag == True):
         obj.send_message(msg)
         i = i+1
         print("Sent : ", i)
-    except:
-        print("ERROR")
+    except smtplib.SMTPException:
+        print(smtplib.SMTPException)
